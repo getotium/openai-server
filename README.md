@@ -38,9 +38,14 @@ zero-dependency reference — the whole server (and its tests) work out of the b
 
 ## Conformance
 
-The batch lifecycle is exercised end-to-end over real HTTP (`server_test.go`): upload → create →
-poll → download → verify. A suite that drives the server with the **official `openai-go` SDK** — the
-strongest "base-URL swap actually works" proof — is the next addition.
+Two suites prove the surface is real, not "compatible-ish":
+
+- **`conformance_test.go`** drives the server with the **official [`openai-go`](https://github.com/openai/openai-go)
+  SDK** — upload → create → poll → download — so "a stock OpenAI client works by base-URL swap" is a
+  passing test, not a claim.
+- **`server_test.go`** exercises the same batch lifecycle over raw HTTP.
+
+Both run in CI on every change.
 
 ## Provenance
 

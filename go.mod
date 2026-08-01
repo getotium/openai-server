@@ -2,4 +2,14 @@ module github.com/getotium/openai-server
 
 go 1.26
 
-require github.com/getotium/openai v0.0.0-20260801191612-010fc18d1fef
+require (
+	github.com/getotium/openai v0.0.0-20260801191612-010fc18d1fef
+	github.com/openai/openai-go v1.12.0
+)
+
+require (
+	github.com/tidwall/gjson v1.14.4 // indirect
+	github.com/tidwall/match v1.1.1 // indirect
+	github.com/tidwall/pretty v1.2.1 // indirect
+	github.com/tidwall/sjson v1.2.5 // indirect
+)
