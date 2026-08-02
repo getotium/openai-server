@@ -49,7 +49,7 @@ Both run in CI on every change.
 
 ## Provenance
 
-The OpenAI-compatible surface [Otium](https://getotium.com) exposes so customers integrate by
+The OpenAI-compatible surface [Otium](https://getotium.ai) exposes so customers integrate by
 pointing an existing OpenAI client at it, published as an independent reference. The scheduling,
 pricing, and model-selection that sit behind Otium's own server are not here — this is the open,
 conformant harness.
