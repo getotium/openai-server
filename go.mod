@@ -3,7 +3,7 @@ module github.com/getotium/openai-server
 go 1.26
 
 require (
-	github.com/getotium/openai v0.1.0
+	github.com/getotium/openai v0.1.1
 	github.com/openai/openai-go v1.12.0
 )
 
